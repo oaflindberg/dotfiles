@@ -47,7 +47,9 @@ This is the installation guide to setup these dotfiles on a new macOS system.
     ./script/sync
     ```
 
-7. Setup Visual Studio Code and sync settings with Gist.
+7. Install the 2 fonts located in the fonts folder
 
-8. Load iTerm2 settings located in the iTerm2 folder 
-> Settings -> General -> Preferences -> Load preferences from a custom folder or URL
+8. Setup Visual Studio Code and sync settings with Gist.
+
+9. Load iTerm2 settings located in the iTerm2 folder 
+> *Settings -> General -> Preferences -> Load preferences from a custom folder or URL*
