@@ -48,3 +48,6 @@ This is the installation guide to setup these dotfiles on a new macOS system.
     ```
 
 7. Setup Visual Studio Code and sync settings with Gist.
+
+8. Load iTerm2 settings located in the iTerm2 folder 
+> Settings -> General -> Preferences -> Load preferences from a custom folder or URL
