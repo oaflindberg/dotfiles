@@ -1,6 +1,6 @@
 # dotfiles
 
-> Thank you [Vinkla](https://github.com/vinkla) for helping me set this up. 
+> Shoutout to [Vinkla](https://github.com/vinkla) for helping me set this up. Let's hope it works ¯ \ _ (ツ) _ / ¯ 
 
 ## Installation
 
