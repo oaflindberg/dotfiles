@@ -41,6 +41,10 @@ This is the installation guide to setup these dotfiles on a new macOS system.
     ./script/macos
     ```
 
-6. Install the dotfiles into the home directory.
+6. Install the dotfiles in "home" into the home directory.
+
+    ```sh
+    ./script/sync
+    ```
 
 7. Setup Visual Studio Code and sync settings with Gist.
