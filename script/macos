@@ -1,5 +1,10 @@
 #!/bin/bash
 
+set -ex
+
+# Ask for the administrator password upfront
+sudo -v
+
 # Set 1.1.1.1 as default DNS servers
 networksetup -setdnsservers Wi-Fi 1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001
 
@@ -24,11 +29,17 @@ defaults write com.apple.finder _FXSortFoldersFirst -bool true
 defaults write com.apple.siri StatusMenuVisible -bool false
 defaults write com.apple.siri UserHasDeclinedEnable -bool true
 
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
 # Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Install custom Oh My Zsh plugins
-git clone https://github.com/MichaelAquilina/zsh-auto-notify.git $ZSH_CUSTOM/plugins/auto-notify
+git clone https://github.com/MichaelAquilina/zsh-auto-notify.git ~/.oh-my-zsh/custom/plugins/auto-notify
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 git clone https://github.com/peterhurford/up.zsh ~/.oh-my-zsh/custom/plugins/up
-git clone https://github.com/MichaelAquilina/zsh-you-should-use.git $ZSH_CUSTOM/plugins/you-should-use
+git clone https://github.com/MichaelAquilina/zsh-you-should-use.git ~/.oh-my-zsh/custom/plugins/you-should-use
+
+# Revoke sudo access again.
+sudo -k

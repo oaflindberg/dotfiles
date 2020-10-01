@@ -38,16 +38,21 @@ brew cask install hyper
 brew cask install iterm2
 brew cask install imagealpha
 brew cask install imageoptim
+brew cask install kap
+brew cask install postman
 brew cask install responsively
 brew cask install slack
 brew cask install spotify
 brew cask install tableplus
+brew cask install transmission
 brew cask install visual-studio-code
 
 # Amphetamine
 mas install 937984704
 # Battery Indicator
 mas install 1206020918
+# Fantastical
+mas install 975937182
 # Slack
 mas install 803453959
 #  Glance – Quick Look Plugin
