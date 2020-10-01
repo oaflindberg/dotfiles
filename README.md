@@ -47,7 +47,7 @@ This is the installation guide to setup these dotfiles on a new macOS system.
     ./script/sync
     ```
 
-7. Install the 2 fonts located in the fonts folder
+7. Install the 2 fonts located in the fonts.zip
 
 8. Setup Visual Studio Code and sync settings with Gist.
 
