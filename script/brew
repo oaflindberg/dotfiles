@@ -38,14 +38,15 @@ cask 'slack'
 cask 'spotify'
 cask 'tableplus'
 cask 'visual-studio-code'
-mas 'Amphetamine' id: 937984704
-mas 'Battery Indicator' id: 1206020918
+mas 'Amphetamine', id: 937984704
+mas 'Battery Indicator', id: 1206020918
 mas 'Glance', id: 1513574319
-mas 'Logic Pro X' id: 634148309
+mas 'Logic Pro X', id: 634148309
 mas 'Magnet', id: 441258766
-mas 'RunCat' id: 1429033973
-mas 'Spark - Email App by Readdle' id: 1176895641
-mas 'Things 3' id: 904280696
+mas 'RunCat', id: 1429033973
+mas 'Spark - Email App by Readdle', id: 1176895641
+mas 'The Unarchiver', id: 425424353
+mas 'Things 3', id: 904280696
 mas 'Tim', id: 1449619230
 mas 'Tweetbot 3', id: 1384080005
 RUBY
