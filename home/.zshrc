@@ -13,13 +13,6 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-#alanpeabody
-# powerlevel10k/powerlevel10k
-# terminalparty
-# spaceship-prompt/spaceship
-# agnoster
-# jnrowe
-
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -78,7 +71,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions lol npm zsh-syntax-highlighting zsh-z up you-should-use colored-man-pages fzf auto-notify deno)
+plugins=(git zsh-autosuggestions lol npm zsh-syntax-highlighting zsh-z up you-should-use colored-man-pages auto-notify)
 # zsh-z
 source $ZSH/oh-my-zsh.sh
 
@@ -108,7 +101,6 @@ alias zshconfig="code ~/.zshrc"
 alias zshreload="source ~/.zshrc"
 alias fix="git diff --name-only | uniq | xargs code"
 alias ydl="youtube-dl"
-alias mf="move-file"
 alias et="empty-trash"
 alias iopt="imageoptim -a"
 alias gief="gimmeh index.html style.css script.js"
@@ -116,14 +108,12 @@ alias home="~"
 alias svtlist="svtplay-dl --list-quality"
 alias c='clear'
 alias neofetcha='neofetch --ascii_distro Anarchy'
-alias matrix='cmatrix -u 2'
 alias npmlistg='npmL -g --depth=0'
 alias space='du -sh *'
 alias diskspace='df -lH'
 alias react-app='npx create-react-app .'
 alias next-app='npx create-next-app'
 alias ohmyupg='omz update'
-alias mycli='mycli -S /tmp/mysql.sock'
 alias tree='tree -I node_modules/ -F'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
