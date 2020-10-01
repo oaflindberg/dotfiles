@@ -1,6 +1,6 @@
 # dotfiles
 
-> .files, sensible hacker defaults for macOS. If you're curious how to setup your own dotfiles, please visit [Mathias Bynens's dotfiles](https://github.com/mathiasbynens/dotfiles) and [Mike McQuaid's strap project](https://github.com/mikemcquaid/strap) to learn more.
+> Thank you [Vinkla](https://github.com/vinkla) for helping me set this up. 
 
 ## Installation
 
@@ -29,19 +29,18 @@ This is the installation guide to setup these dotfiles on a new macOS system.
     ```sh
     sudo softwareupdate --install --all
     ```
-  
-4. Bootstrap macOS defaults. 
+
+4. Install third-party libraries with npm:
+
+    ```sh
+    ./script/npm
+    ```
+5. Bootstrap macOS defaults. 
   
     ```sh
     ./script/macos
     ```
 
-5. Install the dotfiles into the home directory.
+6. Install the dotfiles into the home directory.
 
-6. Setup Visual Studio Code and sync settings with Gist.
-
-7. Install third-party libraries with npm:
-
-    ```sh
-    ./script/npm
-    ```
+7. Setup Visual Studio Code and sync settings with Gist.
