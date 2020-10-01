@@ -41,15 +41,17 @@ This is the installation guide to setup these dotfiles on a new macOS system.
     ./script/macos
     ```
 
-6. Install the dotfiles in "home" into the home directory.
+6. [Generate new SSH key, add to ssh-agent and upload to GitHub.](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
+7. Install the dotfiles in "home" into the home directory.
 
     ```sh
     ./script/sync
     ```
 
-7. Install the 2 fonts located in the fonts.zip
+8. Install the 2 fonts located in the fonts.zip
 
-8. Setup Visual Studio Code and sync settings with Gist.
+9. Setup Visual Studio Code and sync settings with Gist.
 
-9. Load iTerm2 settings located in the iTerm2 folder 
+10. Load iTerm2 settings located in the iTerm2 folder 
 > *Settings -> General -> Preferences -> Load preferences from a custom folder or URL*
