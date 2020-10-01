@@ -18,7 +18,7 @@ This is the installation guide to setup these dotfiles on a new macOS system.
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     ```
   
-    Then install Homebrew packages, casks and MacOS AppStore apps
+    Then install Homebrew packages, casks and MacOS AppStore apps.
     
     ```sh
     ./script/brew
@@ -49,9 +49,9 @@ This is the installation guide to setup these dotfiles on a new macOS system.
     ./script/sync
     ```
 
-8. Install the 2 fonts located in the fonts.zip
+8. Install the 2 fonts located in the fonts.zip.
 
-9. Setup Visual Studio Code and sync settings with Gist.
+9. Install [this extension](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) and sync VSCode settings. 
 
-10. Load iTerm2 settings located in the iTerm2 folder 
+10. Load iTerm2 settings located in the iTerm2 folder.
 > *Settings -> General -> Preferences -> Load preferences from a custom folder or URL*
