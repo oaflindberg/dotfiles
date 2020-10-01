@@ -28,11 +28,12 @@ brew install zsh-syntax-highlighting
 # CASKS
 brew cask install alfred
 brew cask install appcleaner
-brew cask install beamer
 brew cask install bitwarden
 brew cask install blurred
 brew cask install brave-browser
 brew cask install devdocs
+brew cask install dozer
+brew cask install firefox
 brew cask install github
 brew cask install hyper
 brew cask install iterm2
@@ -41,11 +42,13 @@ brew cask install imageoptim
 brew cask install kap
 brew cask install postman
 brew cask install responsively
+brew cask install runjs
 brew cask install slack
 brew cask install spotify
 brew cask install tableplus
 brew cask install transmission
 brew cask install visual-studio-code
+brew cask install vlc
 
 # Amphetamine
 mas install 937984704
