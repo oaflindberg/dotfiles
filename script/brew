@@ -1,53 +1,70 @@
 #!/bin/bash
 
-brew bundle --file=- <<RUBY
-tap 'homebrew/cask-fonts'
-tap 'homebrew/cask'
-tap 'homebrew/core'
-tap 'homebrew/services'
-brew 'bat'
-brew 'composer'
-brew 'fish'
-brew 'gh'
-brew 'git'
-brew 'mas'
-brew 'mysql@5.7'
-brew 'node'
-brew 'php'
-brew 'svtplay-dl'
-brew 'thefuck'
-brew 'yarn'
-brew 'youtube-dl'
-brew 'z'
-brew 'zsh'
-brew 'zsh-completions'
-brew 'zsh-syntax-highlighting'
-cask 'alfred'
-cask 'appcleaner'
-cask 'beamer'
-cask 'bitwarden'
-cask 'blurred'
-cask 'brave-browser'
-cask 'devdocs'
-cask 'github-desktop'
-cask 'hyper'
-cask 'iterm2'
-cask 'imagealpha'
-cask 'imageoptim'
-cask 'responsively'
-cask 'slack'
-cask 'spotify'
-cask 'tableplus'
-cask 'visual-studio-code'
-mas 'Amphetamine', id: 937984704
-mas 'Battery Indicator', id: 1206020918
-mas 'Glance', id: 1513574319
-mas 'Logic Pro X', id: 634148309
-mas 'Magnet', id: 441258766
-mas 'RunCat', id: 1429033973
-mas 'Spark - Email App by Readdle', id: 1176895641
-mas 'The Unarchiver', id: 425424353
-mas 'Things 3', id: 904280696
-mas 'Tim', id: 1449619230
-mas 'Tweetbot 3', id: 1384080005
-RUBY
+# TAPS
+brew tap homebrew/cask-fonts
+brew tap homebrew/cask
+brew tap homebrew/core
+brew tap homebrew/services
+
+# PACKAGES
+brew install bat
+brew install composer
+brew install fish
+brew install gh
+brew install git
+brew install mas
+brew install mysql@5.7
+brew install node
+brew install php
+brew install svtplay-dl
+brew install thefuck
+brew install yarn
+brew install youtube-dl
+brew install z
+brew install zsh
+brew install zsh-completions
+brew install zsh-syntax-highlighting
+
+# CASKS
+brew cask install alfred
+brew cask install appcleaner
+brew cask install beamer
+brew cask install bitwarden
+brew cask install blurred
+brew cask install brave-browser
+brew cask install devdocs
+brew cask install github
+brew cask install hyper
+brew cask install iterm2
+brew cask install imagealpha
+brew cask install imageoptim
+brew cask install responsively
+brew cask install slack
+brew cask install spotify
+brew cask install tableplus
+brew cask install visual-studio-code
+
+# Amphetamine
+mas install 937984704
+# Battery Indicator
+mas install 1206020918
+# Slack
+mas install 803453959
+#  Glance – Quick Look Plugin
+mas install 1513574319
+# Logic Pro X 
+mas install 634148309
+# Magnet
+mas install 441258766
+# RunCat
+mas install 1429033973
+# Spark – Email App by Readdle
+mas install 1176895641
+# The Unarchiver
+mas install 425424353
+# Things 3
+mas install 904280696
+# Tim ∙ Simple Time Tracker
+mas install 1449619230
+# Tweetbot
+mas install 1384080005

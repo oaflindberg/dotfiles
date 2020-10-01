@@ -18,7 +18,7 @@ This is the installation guide to setup these dotfiles on a new macOS system.
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     ```
   
-    Then install dependencies with Homebrew bundle:
+    Then install Homebrew packages, casks and MacOS AppStore apps
     
     ```sh
     ./script/brew
