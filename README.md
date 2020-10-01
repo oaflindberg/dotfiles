@@ -44,5 +44,3 @@ This is the installation guide to setup these dotfiles on a new macOS system.
 6. Install the dotfiles into the home directory.
 
 7. Setup Visual Studio Code and sync settings with Gist.
-
-8. Install [Bitwarden](https://bitwarden.com/download/) 
