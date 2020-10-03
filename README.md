@@ -12,7 +12,7 @@ This is the installation guide to setup these dotfiles on a new macOS system.
     xcode-select --install
     ```
 
-2. Install Homebrew and dependencies:
+2. Install Homebrew 
 
     ```sh
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
