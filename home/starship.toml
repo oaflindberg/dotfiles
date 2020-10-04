@@ -1,5 +1,9 @@
 add_newline = false
 
+[directory]
+truncation_length = 8
+truncation_symbol = "…/"
+
 [git_branch]
 symbol = "🌱  "
 truncation_length = 8
@@ -22,3 +26,8 @@ disabled = true
 
 [php]
 disabled = true
+
+[status]
+symbol = "💣 "
+format = "\\[$symbol\\] "
+disabled = false
