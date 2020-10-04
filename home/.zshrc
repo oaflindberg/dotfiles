@@ -120,19 +120,11 @@ alias tree='tree -I node_modules/ -F'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
-# source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 eval "$(thefuck --alias)"
-# export ZPLUG_HOME="/usr/local/opt/zplug"
-# source $ZPLUG_HOME/init.zsh
-
-# zplug "changyuheng/fz", defer:1
-# zplug "rupa/z", use:z.sh
 export PATH="/usr/local/opt/node@12/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
-# export FZF_BASE=/usr/local/Cellar/fzf/0.22.0
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
