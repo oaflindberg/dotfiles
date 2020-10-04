@@ -2,6 +2,7 @@ module.exports = {
   config: {
     bell: false,
     cursorShape: 'BEAM',
+    cursorBlink: true,
     fontFamily: 'Liga Dank Mono, MesloLGS NF',
     fontSize: 13,
     fontWeightBold: 'normal',
@@ -9,5 +10,5 @@ module.exports = {
     shell: '/usr/local/bin/fish',
     updateChannel: 'canary',
   },
-  plugins: ['hypercwd', 'hyperterm-horizon'],
+  plugins: ['hypercwd', "hyper-snazzy"],
 };
