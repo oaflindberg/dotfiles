@@ -21,10 +21,7 @@ brew install svtplay-dl
 brew install thefuck
 brew install yarn
 brew install youtube-dl
-brew install z
 brew install zsh
-brew install zsh-completions
-brew install zsh-syntax-highlighting
 
 # CASKS
 brew cask install alfred

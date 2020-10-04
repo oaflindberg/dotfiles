@@ -15,7 +15,7 @@ This is the installation guide to setup these dotfiles on a new macOS system.
 2. Install Homebrew 
 
     ```sh
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" 
     ```
   
     Then install Homebrew packages, casks and MacOS AppStore apps.
@@ -41,17 +41,23 @@ This is the installation guide to setup these dotfiles on a new macOS system.
     ./script/macos
     ```
 
-6. [Generate new SSH key, add to ssh-agent and upload to GitHub.](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+6. Install oh-my-zsh plugins
 
-7. Install the dotfiles in "home" into the home directory.
+    ```sh
+    ./script/zsh
+    ```
+
+7. [Generate new SSH key, add to ssh-agent and upload to GitHub.](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
+8. Install the dotfiles in "home" into the home directory.
 
     ```sh
     ./script/sync
     ```
 
-8. Install the 2 fonts located in the fonts.zip.
+9. Install the 2 fonts located in the fonts.zip.
 
-9. Install [this extension](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) and sync VSCode settings. 
+10. Sync your VSCode settings
 
-10. Load iTerm2 settings located in the iTerm2 folder.
+11. Load iTerm2 settings located in the iTerm2 folder.
 > *Settings -> General -> Preferences -> Load preferences from a custom folder or URL*
