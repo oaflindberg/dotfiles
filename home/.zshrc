@@ -71,7 +71,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions lol npm zsh-syntax-highlighting zsh-z up you-should-use colored-man-pages auto-notify)
+plugins=(git zsh-autosuggestions lol npm zsh-syntax-highlighting zsh-z up you-should-use colored-man-pages fzf auto-notify deno)
 # zsh-z
 source $ZSH/oh-my-zsh.sh
 
@@ -108,27 +108,27 @@ alias home="~"
 alias svtlist="svtplay-dl --list-quality"
 alias c='clear'
 alias neofetcha='neofetch --ascii_distro Anarchy'
+alias matrix='cmatrix -u 2'
 alias npmlistg='npmL -g --depth=0'
 alias space='du -sh *'
 alias diskspace='df -lH'
 alias react-app='npx create-react-app .'
 alias next-app='npx create-next-app'
 alias ohmyupg='omz update'
+alias mycli='mycli -S /tmp/mysql.sock'
 alias tree='tree -I node_modules/ -F'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+# source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 eval "$(thefuck --alias)"
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/powerlevel10k/powerlevel10k.zsh-theme
 export ZPLUG_HOME="/usr/local/opt/zplug"
 source $ZPLUG_HOME/init.zsh
 
 zplug "changyuheng/fz", defer:1
 zplug "rupa/z", use:z.sh
 export PATH="/usr/local/opt/node@12/bin:$PATH"
-
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
