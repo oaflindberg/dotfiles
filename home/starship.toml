@@ -17,3 +17,6 @@ disabled = true
 
 [nodejs]
 disabled = true
+
+[php]
+disabled = true
