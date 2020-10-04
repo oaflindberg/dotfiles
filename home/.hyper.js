@@ -6,7 +6,7 @@ module.exports = {
     fontSize: 13,
     fontWeightBold: 'normal',
     lineHeight: 1.25,
-    shell: '/usr/local/bin/zsh',
+    shell: '/usr/local/bin/fish',
     updateChannel: 'canary',
   },
   plugins: ['hypercwd', 'hyperterm-horizon'],
