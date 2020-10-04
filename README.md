@@ -21,7 +21,8 @@ This is the installation guide to setup these dotfiles on a new macOS system.
     Then install Homebrew packages, casks and MacOS AppStore apps.
     
     ```sh
-    ./script/brew
+   cd script
+   brew bundle 
     ```
 
 3. Install any remaining software updates:

@@ -1,0 +1,60 @@
+tap "github/gh"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+tap "homebrew/services"
+
+brew "bat"
+brew "composer"
+brew "fish"
+brew "gh"
+brew "git"
+brew "mas"
+brew "mysql@5.7", restart_service: true
+brew "node@12"
+brew "php"
+brew "svtplay-dl"
+brew "thefuck"
+brew "yarn"
+brew "youtube-dl"
+brew "zsh"
+
+cask "alfred"
+cask "appcleaner"
+cask "bitwarden"
+cask "blurred"
+cask "brave-browser"
+cask "devdocs"
+cask "dozer"
+cask "firefox"
+cask "github"
+cask "hyper"
+cask "iterm2"
+cask "imagealpha"
+cask "imageoptim"
+cask "kap"
+cask "postman"
+cask "responsively"
+cask "runjs"
+cask "slack"
+cask "spotify"
+cask "tableplus"
+cask "transmission"
+cask "visual-studio-code"
+cask "vlc"
+
+mas "Amphetamine", id: 937984704
+mas "Battery Indicator", id: 1206020918
+mas "Glance", id: 1513574319
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Logic Pro X", id: 634148309
+mas "Magnet", id: 441258766
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "RunCat", id: 1429033973
+mas "Spark", id: 1176895641
+mas "The Unarchiver", id: 425424353
+mas "Things", id: 904280696
+mas "Tim", id: 1449619230
+mas "Tweetbot", id: 1384080005
