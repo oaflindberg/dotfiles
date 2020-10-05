@@ -13,6 +13,7 @@ brew "mas"
 brew "mysql@5.7", restart_service: true
 brew "node@12"
 brew "php"
+brew "starship"
 brew "svtplay-dl"
 brew "yarn"
 brew "youtube-dl"
