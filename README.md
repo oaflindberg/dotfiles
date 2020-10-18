@@ -54,16 +54,22 @@ This is the installation guide to setup these dotfiles on a new macOS system.
     ```
     curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     ```
+9. Install the vim-plguins
 
-9. Install the dotfiles in "home" into the home directory.
+    ```
+    nvim
+    :PlugInstall
+    ```
+
+10. Install the dotfiles in "home" into the home directory.
 
     ```sh
     ./script/sync
     ```
 
-10. Install the 2 fonts located in the fonts.zip.
+11. Install the 2 fonts located in the fonts.zip.
 
-11. Sync your VSCode settings
+12. Sync your VSCode settings
 
-12. Load iTerm2 settings located in the iTerm2 folder.
+13. Load iTerm2 settings located in the iTerm2 folder.
 > *Settings -> General -> Preferences -> Load preferences from a custom folder or URL*
