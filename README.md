@@ -50,15 +50,20 @@ This is the installation guide to setup these dotfiles on a new macOS system.
 
 7. [Generate new SSH key, add to ssh-agent and upload to GitHub.](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
-8. Install the dotfiles in "home" into the home directory.
+8. Install vim-plug
+    ```
+    curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    ```
+
+9. Install the dotfiles in "home" into the home directory.
 
     ```sh
     ./script/sync
     ```
 
-9. Install the 2 fonts located in the fonts.zip.
+10. Install the 2 fonts located in the fonts.zip.
 
-10. Sync your VSCode settings
+11. Sync your VSCode settings
 
-11. Load iTerm2 settings located in the iTerm2 folder.
+12. Load iTerm2 settings located in the iTerm2 folder.
 > *Settings -> General -> Preferences -> Load preferences from a custom folder or URL*
