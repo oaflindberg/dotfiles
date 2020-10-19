@@ -8,20 +8,12 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
-    " File Explorer
     Plug 'scrooloose/NERDTree'
-    " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
-    " OneDark theme
     Plug 'joshdick/onedark.vim'
-    " coc
     Plug 'neoclide/coc.nvim', { 'branch': 'release' }
-    " Comments
     Plug 'tpope/vim-commentary'
-    " NERDTree
-    Plug 'scrooloose/nerdtree'
     Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     Plug 'vim-airline/vim-airline'
@@ -29,5 +21,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-rooter'
+    Plug 'mattn/emmet-vim'
 
  call plug#end()
