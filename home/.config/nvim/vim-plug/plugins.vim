@@ -22,5 +22,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-rooter'
     Plug 'mattn/emmet-vim'
+    Plug 'junegunn/rainbow_parentheses.vim'
 
  call plug#end()
