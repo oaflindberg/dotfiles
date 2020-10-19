@@ -60,6 +60,11 @@ This is the installation guide to setup these dotfiles on a new macOS system.
     nvim
     :PlugInstall
     ```
+    Exit vim and then install all Coc extensions
+    ```
+    nvim
+    :CocInstall coc-prettier coc-html coc-css coc-json coc-tsserver 
+    ```
 
 10. Install the dotfiles in "home" into the home directory.
 
