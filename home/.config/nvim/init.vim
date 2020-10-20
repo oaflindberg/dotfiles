@@ -7,3 +7,5 @@ source $HOME/.config/nvim/themes/airline.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/nerdtree.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
+source $HOME/.config/nvim/plug-config/devicons.vim
+source $HOME/.config/nvim/plug-config/quickscope.vim
