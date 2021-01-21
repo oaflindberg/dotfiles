@@ -1,55 +1,69 @@
 tap "github/gh"
+tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
+tap "homebrew/services"
+tap "mongodb/brew"
 tap "universal-ctags/universal-ctags"
+tap "wix/brew"
 
+brew "automake"
 brew "bat"
+brew "cmatrix"
 brew "composer"
+brew "coreutils"
+brew "deno"
 brew "fd"
+brew "ffmpeg"
 brew "fish"
+brew "fontforge"
 brew "fzf"
 brew "gh"
 brew "git"
+brew "imagemagick"
+brew "libksba"
+brew "libyaml"
 brew "mas"
+brew "mycli"
 brew "mysql@5.7", restart_service: true
+brew "neofetch"
 brew "neovim"
 brew "node@12"
+brew "pacvim"
 brew "php"
+brew "php-cs-fixer"
 brew "ripgrep"
 brew "starship"
 brew "svtplay-dl"
+brew "telnet"
 brew "the_silver_searcher"
 brew "thefuck"
+brew "watchman"
 brew "yarn"
 brew "youtube-dl"
+brew "z"
+brew "zlib"
+brew "zplug"
 brew "zsh"
+brew "zsh-completions"
+brew "zsh-syntax-highlighting"
+brew "heroku/brew/heroku"
+brew "mongodb/brew/mongodb-community"
+brew "mongodb/brew/mongosh"
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
+brew "wix/brew/applesimutils"
 
-cask "alfred"
+cask "alacritty"
 cask "appcleaner"
-cask "bitwarden"
+cask "beamer"
 cask "blurred"
-cask "brave-browser"
 cask "devdocs"
-cask "dozer"
-cask "firefox"
-cask "github"
-cask "hyper"
-cask "iterm2"
-cask "imagealpha"
-cask "imageoptim"
-cask "kap"
-cask "postman"
+cask "favro"
+cask "graphql-playground"
+cask "karabiner-elements"
 cask "responsively"
-cask "runjs"
-cask "slack"
-cask "spotify"
-cask "tableplus"
-cask "transmission"
-cask "visual-studio-code"
-cask "vlc"
 
 mas "Amphetamine", id: 937984704
 mas "Battery Indicator", id: 1206020918
@@ -63,9 +77,11 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pocket", id: 568494494
 mas "RunCat", id: 1429033973
+mas "Slack", id: 803453959
 mas "Spark", id: 1176895641
 mas "The Unarchiver", id: 425424353
 mas "Things", id: 904280696
 mas "Tim", id: 1449619230
 mas "Trello", id: 1278508951
 mas "Tweetbot", id: 1384080005
+mas "Xcode", id: 497799835
