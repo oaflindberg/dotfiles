@@ -1,3 +1,9 @@
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the start of this file.
+[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
+#### END FIG ENV VARIABLES ####
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export PATH="$PATH:/usr/local/bin/npm/"
@@ -7,11 +13,16 @@
 export ZSH="/Users/Andreas/.oh-my-zsh"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
+timezsh() {
+  shell=${1-$SHELL}
+  for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
+}
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -71,8 +82,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions lol npm zsh-syntax-highlighting zsh-z up you-should-use colored-man-pages auto-notify)
-# zsh-z
+export NVM_LAZY_LOAD=true
+export NVM_COMPLETION=true
+plugins=(git npm zsh-syntax-highlighting zsh-z you-should-use zsh-nvm)
+# lol zsh-autosuggestions fzf auto-notify 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -117,14 +130,42 @@ alias next-app='npx create-next-app'
 alias ohmyupg='omz update'
 alias mycli='mycli -S /tmp/mysql.sock'
 alias tree='tree -I node_modules/ -F'
+alias vim='nvim'
+alias updateall="brew upgrade && brew upgrade --cask && omz update && ncu -g"
+alias hiber="cd ~/GitHub/Hiber\ World/"
+alias hiberios="cd ~/GitHub/Hiber\ World/react-native-app && code . && yarn && cd ios && pod install && cd .. && yarn ios"
+alias code:app="cd ~/GitHub/Hiber\ World/react-native-app && code ."
+alias code:web="cd ~/GitHub/Hiber\ World/hiber-platform && code ."
+alias ip="ipconfig getifaddr en0"
+alias ll="exa --tree --level=1 --long --icons --ignore-glob="node_modules""
+alias lt="exa --tree --level=2 --long --ignore-glob="node_modules""
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
-eval "$(thefuck --alias)"
+export ZPLUG_HOME="/usr/local/opt/zplug"
+source $ZPLUG_HOME/init.zsh
+
+zplug "changyuheng/fz", defer:1
+zplug "rupa/z", use:z.sh
 export PATH="/usr/local/opt/node@12/bin:$PATH"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export FZF_BASE=/usr/local/Cellar/fzf/0.22.0
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PGDATA=/usr/local/var/postgres
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Starship prompt
+eval "$(starship init zsh)"
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the end of this file.
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####
